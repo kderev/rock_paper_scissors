@@ -1,8 +1,6 @@
 function getComputerChoice() {
   let number = Math.random();
 
-  console.log(number);
-
   let computerChoice = " ";
 
   if (number <= 1 / 3) {
@@ -18,4 +16,21 @@ function getComputerChoice() {
   return computerChoice;
 }
 
+function getHumanChoice() {
+  let humanChoice = prompt("What's your choice padawan?");
+
+  if (humanChoice.toLowerCase === "rock") {
+    humanChoice = "Rock";
+  } else if (humanChoice.toLowerCase === "paper") {
+    humanChoice = "Paper";
+  } else if (humanChoice.toLowerCase === "scissors") {
+    humanChoice = "Scissors";
+  }
+
+  return humanChoice;
+}
+
+getHumanChoice;
+
 console.log(getComputerChoice());
+console.log(getHumanChoice());
