@@ -5,13 +5,13 @@ function getComputerChoice() {
 
   if (number <= 1 / 3) {
     number = 2;
-    computerChoice = "Rock";
+    computerChoice = "rock";
   } else if (number >= 2 / 3) {
     number = 4;
-    computerChoice = "Scissors";
+    computerChoice = "scissors";
   } else {
     number = 3;
-    computerChoice = "Paper";
+    computerChoice = "paper";
   }
   return computerChoice;
 }
@@ -20,11 +20,11 @@ function getHumanChoice() {
   let humanChoice = prompt("What's your choice padawan?");
 
   if (humanChoice.toLowerCase === "rock") {
-    humanChoice = "Rock";
+    humanChoice === "Rock";
   } else if (humanChoice.toLowerCase === "paper") {
-    humanChoice = "Paper";
+    humanChoice === "Paper";
   } else if (humanChoice.toLowerCase === "scissors") {
-    humanChoice = "Scissors";
+    humanChoice === "Scissors";
   }
 
   return humanChoice;
@@ -38,8 +38,6 @@ function playGame() {
     const a = "rock";
     const b = "paper";
     const c = "scissors";
-    humanScore = 0;
-    computerScore = 0;
 
     if (humanChoice === a && computerChoice === c) {
       console.log("You won! Rock beats Scissors.");
