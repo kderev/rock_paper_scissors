@@ -4,20 +4,25 @@ function getComputerChoice() {
   let computerChoice = " ";
 
   if (number <= 1 / 3) {
-    number = 2;
     computerChoice = "rock";
   } else if (number >= 2 / 3) {
-    number = 4;
     computerChoice = "scissors";
   } else {
-    number = 3;
     computerChoice = "paper";
   }
   return computerChoice;
 }
 
 function getHumanChoice() {
-  let humanChoice = prompt("What's your choice padawan?");
+  do {
+    humanChoice = prompt(
+      "What's your choice padawan ? (rock / paper / scissors)"
+    );
+  } while (
+    humanChoice.toLowerCase() != "rock" &&
+    humanChoice.toLowerCase() != "paper" &&
+    humanChoice.toLowerCase() != "scissors"
+  );
 
   humanChoice = humanChoice.toLowerCase();
 
