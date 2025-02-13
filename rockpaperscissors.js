@@ -19,13 +19,7 @@ function getComputerChoice() {
 function getHumanChoice() {
   let humanChoice = prompt("What's your choice padawan?");
 
-  if (humanChoice.toLowerCase === "rock") {
-    humanChoice === "Rock";
-  } else if (humanChoice.toLowerCase === "paper") {
-    humanChoice === "Paper";
-  } else if (humanChoice.toLowerCase === "scissors") {
-    humanChoice === "Scissors";
-  }
+  humanChoice = humanChoice.toLowerCase();
 
   return humanChoice;
 }
