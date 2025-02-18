@@ -4,7 +4,7 @@ A simple Rock Paper Scissors game implemented in JavaScript.
 
 ## Description
 
-This project is a classic implementation of the Rock Paper Scissors game. The user plays against the computer, and the program determines the winner each round.
+This project is a classic implementation of the Rock Paper Scissors game. The user plays against the computer, and the program determines the winner each round by displaying the results directly on the webpage.
 
 ## Getting Started
 
@@ -13,11 +13,10 @@ This project is a classic implementation of the Rock Paper Scissors game. The us
     git clone https://github.com/kderev/rock_paper_scissors.git
     ```
 2.  Open the `index.html` file in your web browser.
-3.  Follow the instructions in the console to play.
 
-## Usage Examples
+## Usage
 
-After opening `index.html`, you'll be prompted to enter your choice (rock, paper, or scissors). The computer will make a random choice, and the result of the round will be displayed in the console.
+Once the `index.html` file is opened, you can play by clicking on the "Rock", "Paper", or "Scissors" buttons. The computer's choice and the result of each round will be displayed directly on the webpage. The first player to reach a score of 5 wins the game.
 
 ## Credits
 
